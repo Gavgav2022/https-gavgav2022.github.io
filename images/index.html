@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart clean</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header w-100" id="header">
+            <div class="container">
+                <div class="header__inner align-items-center justify-content-between text-center row">
+                    <div class="logo col-2">
+                        <a href="#" class="logo__link d-block">
+                            <img src="../images/sprite.svg#logo" alt="logo" class="logo__img mb-34">
+                        </a>
+                    </div>
+                    <nav class="col-8 menu">
+                        <ul class="menu__list d-flex justify-content-between w-100">
+                            <li class="menu__item menu__item-active"> <a href="#" class="menu__link">Home</a> </li>
+                            <li class="menu__item"> <a href="#" class="menu__link">Services</a> </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Available in</a>
+                                <ul class="menu__sub-item position-absolute bg-white">
+                                    <li class="menu__sub-link"><a href="#">Cleaning West London</a></li>
+                                    <li class="menu__sub-link"><a href="#">Cleaning East London</a></li>
+                                    <li class="menu__sub-link"><a href="#">Cleaning North London</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item"> <a href="#" class="menu__link">Price</a> </li>
+                            <li class="menu__item"> <a href="#" class="menu__link">Information</a> </li>
+                            <li class="menu__item"> <a href="#" class="menu__link">Blog</a> </li>
+                            <li class="menu__item"> <a href="#" class="menu__link">Contact us</a> </li>
+                        </ul>
+                    </nav>
+                    <div class="contacts col-2">
+                        <a href="tel:027 777 852 1" class="contacts__phone">027 777 852 1</a>
+                        <div class="contacts__time">
+                            <span class=" d-block">Mondey to friday: <time class="contacts__time-descr">7:00 AM - 22:00
+                                    PM</time></span>
+                        </div>
+                    </div>
+
+                    <div class="header__book col-2">
+                        <button type="button" class="header__btn">Book now</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+
+            <section class="hero">
+                <div class="container h-100">
+                    <div class="hero__inner row d-flex h-100 align-content-center">
+                        <div class="hero__content col-6 me-5 d-flex flex-column gap-5 justify-content-center">
+                            <h1 class="main-title mb-1">Home Cleaning Service</h1>
+                            <p class="hero__text">We are a full-service cleaning company in London, which provides a
+                                wide
+                                range of high quality cleaning for a house, for a flat and for your office.</p>
+                        </div>
+                        <form class="form-book col-6" id="form-book">
+                            <h3 class="form-book__title text-center">Book service:</h3>
+                            <div class="form-book__content d-flex flex-column">
+                                <label for="form-book__select">Choose Your Service:</label>
+                                <select class="form-book__select name=" Service" required id="form-book__select">
+                                    <option value="1" disabled selected>Service</option>
+                                    <option value="1">Cleaning West London</option>
+                                    <option value="2">Cleaning East London</option>
+                                    <option value="3">Cleaning North London</option>
+                                </select>
+                                <label for="form-book__adress">Service Address:</label>
+                                <input class="form-book__adress" id="form-book__adress" type="text">
+                                <label for="form-book__phone">Enter You Phone:</label>
+                                <input class="form-book__phone mb-5" id="form-book__phone" type="tel">
+                                <label class="form-book__label" for="form-book__checkbox">
+                                    <input class="foorm-book__checkbox d-inline-block" type="checkbox"
+                                        name="form-book__checkbox" id="form-book__checkbox" required>
+                                    I have read and agree with Smart Clean <a href="#"
+                                        class="text-decoration-underline">Privacy Policy</a> and <a href="#"
+                                        class="text-decoration-underline">Terms and Conditions.</a>
+                                </label>
+                                <button class=" form-book__btn justify-content-between mt-5" id="book"
+                                    type="submit">Book</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about bg-white">
+                <div class="container d-flex flex-column justify-content-center">
+                    <h2 class="section__title text-center pt-5">Home Cleaning Service</h2>
+                    <p class="about__text text-center pb-5 pt-5 m-auto">We are a full-service cleaning company in
+                        London, which provides a wide range of high quality cleaning for a house, for a flat and for
+                        your office. Thousands of clients, who have entrusted us with cleaning their properties are
+                        already satisfied with our work.
+                        <span class="d-block">Our advantage is a high professionalism of house cleaning, punctuality and
+                            reasonable price
+                            <a href="#">policy in London.</a> If you need quality house cleaning - call us on <a
+                                href="tel:8989898989898989">8989898989898989</a> or <a href="#form-book">book</a> your
+                            cleaning online.</span></p>
+                </div>
+            </section>
+
+            <section class="work-steps">
+                <div class="container">
+                    <h2 class="section__title text-center pt-5">
+                        How it Works
+                    </h2>
+                    <ul class="work-steps__list row text-center">
+                        <li class="work-steps__item col-4 d-flex flex-column justify-content-start align-items-center">
+                            <a href="#">
+                                <div class="work-steps__img-wrap rounded-circle bg-white mb-5 mt-5">
+                                    <span
+                                        class="work-steps__decor position-absolute top-50 translate-middle-y">01</span>
+                                    <img src="../images/logo-st1.png" alt="logo-steps" class="work-steps__img">
+                                </div>
+                            </a>
+                            <span class="work-steps__step text-center mb-4">Step 1</span>
+                            <p class="work-steps__text">Call us or go to the house cleaning booking page on our
+                                website
+                            </p>
+                        </li>
+                        <li class="work-steps__item col-4 d-flex flex-column justify-content-start align-items-center">
+                            <a href="#">
+                                <div class="work-steps__img-wrap rounded-circle bg-white mb-5 mt-5">
+                                    <span
+                                        class="work-steps__decor position-absolute top-50 translate-middle-y">02</span>
+                                    <img src="../images/logo-st2.png" alt="logo-steps" class="work-steps__img">
+                                </div>
+                            </a>
+                            <span class="work-steps__step text-center mb-4">Step 2</span>
+                            <p class="work-steps__text">Choose a list of cleaning services you are interested in</p>
+                        </li>
+                        <li class="work-steps__item col-4 d-flex flex-column justify-content-start align-items-center">
+                            <a href="#">
+                                <div class="work-steps__img-wrap rounded-circle bg-white mb-5 mt-5">
+                                    <span
+                                        class="work-steps__decor position-absolute top-50 translate-middle-y">03</span>
+                                    <img src="../images/logo-st3.png" alt="logo-steps" class="work-steps__img">
+                                </div>
+                            </a>
+                            <span class="work-steps__step text-center mb-4">Step 3</span>
+                            <p class="work-steps__text">Choose a convenient time and date</p>
+                        </li>
+                        <li class="work-steps__item col-4 d-flex flex-column justify-content-start align-items-center">
+                            <a href="#">
+                                <div class="work-steps__img-wrap rounded-circle bg-white mb-5 mt-5">
+                                    <span
+                                        class="work-steps__decor position-absolute top-50 translate-middle-y">04</span>
+                                    <img src="../images/logo-st4.png" alt="logo-steps" class="work-steps__img">
+                                </div>
+                            </a>
+                            <span class="work-steps__step text-center mb-4">Step 4</span>
+                            <p class="work-steps__text">Get a perfect cleaning service for your property</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="marketing-text w-100">
+                <h2 class="marketing-text__text text-center ">Marketing text about service</h2>
+            </section>
+
+            <section class="advantages">
+                <div class="container">
+                    <h2 class="advantages__title section__title text-center m-5">Why choose our cleaning services?</h2>
+                    <ul class="advantages__list d-flex gap-5 m-auto">
+                        <li class="advantages__item">
+                            <p class="advantages__text text-center">A reliable company. Our services are used and
+                                trusted by over 1000 of our clients on a regular basis</p>
+                        </li>
+                        <li class="advantages__item">
+                            <p class="advantages__text text-center">A high level of professionalism. All our cleaners
+                                have a great experience in cleaning services</p>
+                        </li>
+                        <li class="advantages__item">
+                            <p class="advantages__text text-center">A profitable price. We provide cleaning services at
+                                reasonable prices in London</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="services">
+                <div class="container">
+                    <h2 class="section__title text-center mb-5">Our most popular services are:</h2>
+                    <ul class="services__list d-flex justify-content-between">
+                        <li class="services__item bg-white">
+                            <a href="#form-book" class="services__link d-flex flex-column h-100">
+                                <span class="services__text text-center">Regular Cleaning</span>
+                                <button class="services__btn border-1 bg-white">Book now</button>
+                            </a>
+                        </li>
+                        <li class="services__item bg-white">
+                            <a href="#form-book" class="services__link d-flex flex-column h-100">
+                                <span class="services__text text-center">Flat cleaning</span>
+                                <button class="services__btn border-1 bg-white">Book now</button>
+                            </a>
+                        </li>
+                        <li class="services__item bg-white">
+                            <a href="#form-book" class="services__link d-flex flex-column h-100">
+                                <span class="services__text text-center">House cleaning</span>
+                                <button class="services__btn border-1 bg-white">Book now</button>
+                            </a>
+                        </li>
+                        <li class="services__item bg-white">
+                            <a href="#form-book" class="services__link d-flex flex-column h-100">
+                                <span class="services__text text-center">Office cleaning</span>
+                                <button class="services__btn border-1 bg-white">Book now</button>
+                            </a>
+                        </li>
+                        <li class="services__item bg-white">
+                            <a href="#form-book" class="services__link d-flex flex-column h-100">
+                                <span class="services__text text-center">Cleaning after construction</span>
+                                <button class="services__btn border-1 bg-white">Book now</button>
+                            </a>
+                        </li>
+                        <li class="services__item bg-white">
+                            <a href="#form-book" class="services__link d-flex flex-column h-100">
+                                <span class="services__text text-center">Cleaning after rental</span>
+                                <button class="services__btn border-1 bg-white">Book now</button>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="services__box d-flex flex-column">
+                        <div
+                            class="services__content col-10 align-self-end text-end d-flex flex-column justify-content-center">
+                            <h2 class="section__title mb-5">Professional cleaning of your flat, house or office</h2>
+                            <p class="services__descr">Our goal is to provide a high quality cleaning services at an
+                                affordable price. We are very careful in selecting workers for our cleaning service in
+                                London. All of them have extensive experience of successful work.
+                                We use the best detergents that are not harmful. We also take into account all the
+                                special requirements for both one-time and regular cleaning services.</p>
+                        </div>
+                        <div class="services__content col-8 d-flex flex-column justify-content-center">
+                            <h2 class="section__title mb-5">Regular house cleaning</h2>
+                            <p class="services__descr">With a regular cleaning service, you choose a convenient
+                                frequency (every day, once a week or less) and time of visit. We work to an agreed
+                                cleaning list that is important to you. Moreover, if you want, you will be served by the
+                                same professional.</p>
+                        </div>
+                        <div
+                            class="services__content col-10 align-self-end text-end d-flex flex-column justify-content-center">
+                            <h2 class="section__title mb-5">One-time cleaning</h2>
+                            <p class="services__descr">When there is no time for cleaning your house or flat, we will
+                                gladly help you get everything in order. All you have to do is tell us what you need to
+                                clean and we will get your house cleaned quickly and efficiently.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq bg-white text-center pt-5 pb-5">
+                <div class="container">
+                    <h2 class="section__title mb-5">Frequently Asked Questions</h2>
+                    <div class="faq__box row justify-content-center flex-column align-content-center gap-3">
+                        <a href="#" class="faq__link m-auto">What is included in a cleaning service?</a>
+                        <a href="#" class="faq__link m-auto">Does the cleaner use his or her own cleaning products and
+                            equipment
+                            or
+                            do I have to provide them?</a>
+                        <a href="#" class="faq__link m-auto">May I use the same cleaner for regular cleaning?</a>
+                        <a href="#" class="faq__link m-auto">Do I have to pay if I do not need the cleaning service for
+                            some
+                            time?</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reviews pt-5">
+                <div class="container row">
+                    <h2 class="section__title reviews__title text-center">Service Reviews</h2>
+                    <ul class="reviews__list">
+                        <li
+                            class="reviews__item bg-white d-flex flex-column align-items-center justify-content-center text-center">
+                            <img src="../images/rev/review1.png" alt="reviewer photo" class="reviews__img">
+                            <img src="../images/sprite.svg#stars4" alt="reviews rating" class="reviews__rating">
+                            <blockquote class="reviews__bloquote">
+                                <span class="reviews__name d-block">Eleanor Pena</span>
+                                <p class="reviews__text">Did an excellent end of tenancy clean for me. Very professional
+                                    and thorough, done at very short notice.</p>
+                            </blockquote>
+                        </li>
+                        <li
+                            class="reviews__item bg-white d-flex flex-column align-items-center justify-content-center text-center">
+                            <img src="../images/rev/review2.png" alt="reviewer photo" class="reviews__img">
+                            <img src="../images/sprite.svg#stars4" alt="reviews rating" class="reviews__rating">
+                            <blockquote class="reviews__bloquote">
+                                <span class="reviews__name d-block">Floyd Miles</span>
+                                <p class="reviews__text">Did an excellent end of tenancy clean for me. Very professional
+                                    and thorough, done at very short notice.</p>
+                            </blockquote>
+                        </li>
+                        <li
+                            class="reviews__item bg-white d-flex flex-column align-items-center justify-content-center text-center">
+                            <img src="../images/rev/review3.png" alt="reviewer photo" class="reviews__img">
+                            <img src="../images/sprite.svg#stars4" alt="reviews rating" class="reviews__rating">
+                            <blockquote class="reviews__bloquote">
+                                <span class="reviews__name d-block">Courtney Henry</span>
+                                <p class="reviews__text">Did an excellent end of tenancy clean for me. Very professional
+                                    and thorough, done at very short notice.</p>
+                            </blockquote>
+                        </li>
+                        <li
+                            class="reviews__item bg-white d-flex flex-column align-items-center justify-content-center text-center">
+                            <img src="../images/rev/review4.png" alt="reviewer photo" class="reviews__img">
+                            <img src="../images/sprite.svg#stars4" alt="reviews rating" class="reviews__rating">
+                            <blockquote class="reviews__bloquote">
+                                <span class="reviews__name d-block">Jenny Wilson</span>
+                                <p class="reviews__text">Did an excellent end of tenancy clean for me. Very professional
+                                    and thorough, done at very short notice.</p>
+                            </blockquote>
+                        </li>
+                        <li
+                            class="reviews__item bg-white d-flex flex-column align-items-center justify-content-center text-center">
+                            <img src="../images/rev/review4.png" alt="reviewer photo" class="reviews__img">
+                            <img src="../images/sprite.svg#stars4" alt="reviews rating" class="reviews__rating">
+                            <blockquote class="reviews__bloquote">
+                                <span class="reviews__name d-block">Jenny Wilson</span>
+                                <p class="reviews__text">Did an excellent end of tenancy clean for me. Very professional
+                                    and thorough, done at very short notice.</p>
+                            </blockquote>
+                        </li>
+                        <li
+                            class="reviews__item bg-white d-flex flex-column align-items-center justify-content-center text-center">
+                            <img src="../images/rev/review3.png" alt="reviewer photo" class="reviews__img">
+                            <img src="../images/sprite.svg#stars4" alt="reviews rating" class="reviews__rating">
+                            <blockquote class="reviews__bloquote">
+                                <span class="reviews__name d-block">Courtney Henry</span>
+                                <p class="reviews__text">Did an excellent end of tenancy clean for me. Very professional
+                                    and thorough, done at very short notice.</p>
+                            </blockquote>
+                        </li>
+                        <li
+                            class="reviews__item bg-white d-flex flex-column align-items-center justify-content-center text-center">
+                            <img src="../images/rev/review4.png" alt="reviewer photo" class="reviews__img">
+                            <img src="../images/sprite.svg#stars4" alt="reviews rating" class="reviews__rating">
+                            <blockquote class="reviews__bloquote">
+                                <span class="reviews__name d-block">Jenny Wilson</span>
+                                <p class="reviews__text">Did an excellent end of tenancy clean for me. Very professional
+                                    and thorough, done at very short notice.</p>
+                            </blockquote>
+                        </li>
+                        <li
+                            class="reviews__item bg-white d-flex flex-column align-items-center justify-content-center text-center">
+                            <img src="../images/rev/review4.png" alt="reviewer photo" class="reviews__img">
+                            <img src="../images/sprite.svg#stars4" alt="reviews rating" class="reviews__rating">
+                            <blockquote class="reviews__bloquote">
+                                <span class="reviews__name d-block">Jenny Wilson</span>
+                                <p class="reviews__text">Did an excellent end of tenancy clean for me. Very professional
+                                    and thorough, done at very short notice.</p>
+                            </blockquote>
+                        </li>
+                    </ul>
+                    <button type="button" class="reviews__btn m-auto">Book now</button>
+                </div>
+            </section>
+
+            <section class="cookies position-absolute">
+                <button class="cookies__btn"></button>
+            </section>
+
+            <section class="page-up position-absolute">
+                <a class="page-up__btn d-block" href="#header"></a>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner mb-4">
+                    <div class="footer__sections row">
+                        <div class="footer__sevices col">
+                            <h3 class="footer__title">Our Services</h3>
+                            <ul class="footer__list d-flex flex-column">
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Regular Cleaning</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Weekly Cleaning</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Monthly Cleaning</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Flat Cleaning</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Domestic Cleaning</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Office Cleaning</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">After Builder Cleaning</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">End of Tenancy Cleaning</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Cleaning Service for Move In/Out</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">New House Cleaning</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__info col">
+                            <h3 class="footer__title">Information</h3>
+                            <ul class="footer__list d-flex flex-column">
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">About Us</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">How it Works</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">FAQs</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Testimonials</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Terms & Conditions</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Cleaners List</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Commercial Cleaning List</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Cleaning Contracts Templates</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__available col">
+                            <h3 class="footer__title">Available in</h3>
+                            <ul class="footer__list d-flex flex-column">
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Cleaning West London</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Cleaning East London</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Cleaning North London</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Flat Cleaning</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__contact col">
+                            <h3 class="footer__title">Contact</h3>
+                            <a href="tel:027 777 852 1" class="footer__phone d-block text-decoration-underline">027 777
+                                852
+                                1</a>
+                            <a href="mailto: mailtome@sitetoclean.co.uk" class="footer__mail d-block">
+                                mailtome@sitetoclean.co.uk</a>
+                            <span class="d-block" style="background-image: url('../images/sprite.svg#stars');"></span>
+                            <div class="footer__book col-2">
+                                <button type="button" class="footer__btn">Book now</button>
+                            </div>
+                            <ul class="footer__socials d-flex">
+                                <li class="footer__social d-block">
+                                    <a href="#" class="footer__social-link">
+                                        <svg class="footer__social-icon">
+                                            <use xlink:href="images/sprite.svg#twitter"></use>
+                                        </svg>
+                                    </a></li>
+                                <li class="footer__social d-block">
+                                    <a href="#" class="footer__social-link">
+                                        <svg class="footer__social-icon">
+                                            <use xlink:href="images/sprite.svg#youtube"></use>
+                                        </svg>
+                                    </a></li>
+                                <li class="footer__social d-block">
+                                    <a href="#" class="footer__social-link">
+                                        <svg class="footer__social-icon">
+                                            <use xlink:href="images/sprite.svg#facebook"></use>
+                                        </svg>
+                                    </a></li>
+                                <li class="footer__social d-block">
+                                    <a href="#" class="footer__social-link">
+                                        <svg class="footer__social-icon">
+                                            <use xlink:href="images/sprite.svg#insta"></use>
+                                        </svg>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__bottom d-block text-center">
+                        <a href="#" class="footer__bottom-link">© 2023 SmartHomeClean London Cleaning </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
