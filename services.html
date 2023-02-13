@@ -19,97 +19,96 @@
 <body>
 
 <div class="wrapper">
-    
+
     <header class="header w-100" id="header">
-    <div class="container">
-        <div class="header__inner justify-content-between align-items-center  text-center">
-            <div class="logo">
-                <a href="#" class="logo__link w-100">
-                    <img src="images/sprite.svg#logo" alt="logo" class="logo__img">
-                </a>
-            </div>
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__item menu__item--active"> <a href="index.html" class="menu__link">Home</a> </li>
-                    <li class="menu__item"> <a href="services.html" class="menu__link">Services</a> </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">Available in</a>
-                        <ul class="menu__sub-item position-absolute">
-                            <li class="menu__sub-link"><a href="#">Cleaning West London</a></li>
-                            <li class="menu__sub-link"><a href="#">Cleaning East London</a></li>
-                            <li class="menu__sub-link"><a href="#">Cleaning North London</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__item"> <a href="#" class="menu__link">Price</a> </li>
-                    <li class="menu__item"> <a href="#" class="menu__link">Information</a> </li>
-                    <li class="menu__item"> <a href="#" class="menu__link">Blog</a> </li>
-                    <li class="menu__item"> <a href="#" class="menu__link">Contact us</a> </li>
-                </ul>
-            </nav>
-            <div class="contacts d-sm-block">
-                <a href="tel:027 777 852 1" class="contacts__phone">027 777 852 1</a>
-                <div class="contacts__time d-block">
-                    <span class="d-inline-block">Mondey to friday: <time class="contacts__time-descr">7:00 AM -
-                            22:00
-                            PM</time></span>
+        <div class="container">
+            <div class="header__inner justify-content-between align-items-center  text-center">
+                <div class="logo">
+                    <a href="#" class="logo__link w-100">
+                        <img src="images/sprite.svg#logo" alt="logo" class="logo__img">
+                    </a>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item "> <a href="index.html" class="menu__link">Home</a> </li>
+                        <li class="menu__item menu__item--active"> <a href="services.html"
+                                class="menu__link">Services</a> </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Available in</a>
+                            <ul class="menu__sub-item position-absolute">
+                                <li class="menu__sub-link"><a href="#">Cleaning West London</a></li>
+                                <li class="menu__sub-link"><a href="#">Cleaning East London</a></li>
+                                <li class="menu__sub-link"><a href="#">Cleaning North London</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"> <a href="#" class="menu__link">Price</a> </li>
+                        <li class="menu__item"> <a href="#" class="menu__link">Information</a> </li>
+                        <li class="menu__item"> <a href="#" class="menu__link">Blog</a> </li>
+                        <li class="menu__item"> <a href="#" class="menu__link">Contact us</a> </li>
+                    </ul>
+                </nav>
+                <div class="contacts d-sm-block">
+                    <a href="tel:027 777 852 1" class="contacts__phone">027 777 852 1</a>
+                    <div class="contacts__time d-block">
+                        <span class="d-inline-block">Mondey to friday: <time class="contacts__time-descr">7:00 AM -
+                                22:00
+                                PM</time></span>
+                    </div>
+                </div>
+
+                <div class="header__book">
+                    <button type="button" class="header__btn">Book now</button>
+                </div>
+                <div class="burger-wrapper">
+                    <button class="burger" type="button">
+                        <span class="burger__line"></span>
+                        <span class="sr-only">Открыть меню</span>
+                    </button>
                 </div>
             </div>
-
-            <div class="header__book">
-                <button type="button" class="header__btn">Book now</button>
-            </div>
-            <div class="burger-wrapper">
-                <button class="burger" type="button">
-                    <span class="burger__line"></span>
-                    <span class="sr-only">Открыть меню</span>
-                </button>
-            </div>
         </div>
-    </div>
-</header>
+    </header>
 
     <main class="main">
         <section class="hero">
-    <div class="container">
-        <div class="hero__inner">
-            <div class="hero__content">
-                <h1 class="main-title">Home Cleaning Service</h1>
-                <p class="hero__text">We are a full-service cleaning company in London, which provides a
-                    wide
-                    range of high quality cleaning for a house, for a flat and for your office.</p>
-            </div>
-            <form class="form-book" id="form-book">
-                <div class="form-book__content d-flex flex-column">
-                    <h3 class="form-book__title text-center">Book service:</h3>
-                    <label class="form-book__select-lab" for="form-book__select">Choose Your Service:</label>
-                    <div class="form-book__select-wrapper">
-                        <select class="form-book__select" name="Service" required id="form-book__select">
-                            <option class="form-book__option" value="1" disabled selected>Service</option>
-                            <option class="form-book__option pb-3" value="1">Cleaning West London</option>
-                            <option class="form-book__option pb-5" value="2">Cleaning East London</option>
-                            <option class="form-book__option pb-3" value="3">Cleaning North London</option>
-                        </select>
+            <div class="container">
+                <div class="hero__inner">
+                    <div class="hero__content">
+                        <h1 class="main-title">Service Page</h1>
+                        <p class="hero__text">We are a full-service cleaning company in London, which provides a wide
+                            range of high quality cleaning for a house, for a flat and for your office.</p>
                     </div>
-                    <label for="form-book__adress">Service Address:</label>
-                    <input class="form-book__adress" required id="form-book__adress" type="text">
-                    <label for="form-book__phone">Enter You Phone:</label>
-                    <input class="form-book__phone" required id="form-book__phone" type="tel">
-                    <label class="form-book__label" for="form-book__checkbox">
-                        <input class="foorm-book__checkbox d-inline-block" type="checkbox"
-                            name="form-book__checkbox" id="form-book__checkbox" required>
-                        I have read and agree with Smart Clean <a href="#"
-                            class="text-decoration-underline">Privacy Policy</a> and <a href="#"
-                            class="text-decoration-underline">Terms and Conditions.</a>
-                    </label>
-                    <button class=" form-book__btn justify-content-between" id="book"
-                        type="submit">Book</button>
+                    <form class="form-book" id="form-book">
+                        <div class="form-book__content d-flex flex-column">
+                            <h3 class="form-book__title text-center">Book service:</h3>
+                            <label class="form-book__select-lab" for="form-book__select">Choose Your Service:</label>
+                            <div class="form-book__select-wrapper">
+                                <select class="form-book__select" name="Service" required id="form-book__select">
+                                    <option class="form-book__option" value="1" disabled selected>Service</option>
+                                    <option class="form-book__option pb-3" value="1">Cleaning West London</option>
+                                    <option class="form-book__option pb-5" value="2">Cleaning East London</option>
+                                    <option class="form-book__option pb-3" value="3">Cleaning North London</option>
+                                </select>
+                            </div>
+                            <label for="form-book__adress">Service Address:</label>
+                            <input class="form-book__adress" required id="form-book__adress" type="text">
+                            <label for="form-book__phone">Enter You Phone:</label>
+                            <input class="form-book__phone" required id="form-book__phone" type="tel">
+                            <label class="form-book__label" for="form-book__checkbox">
+                                <input class="foorm-book__checkbox d-inline-block" type="checkbox"
+                                    name="form-book__checkbox" id="form-book__checkbox" required>
+                                I have read and agree with Smart Clean <a href="#"
+                                    class="text-decoration-underline">Privacy Policy</a> and <a href="#"
+                                    class="text-decoration-underline">Terms and Conditions.</a>
+                            </label>
+                            <button class=" form-book__btn justify-content-between" id="book"
+                                type="submit">Book</button>
+                        </div>
+
+                    </form>
                 </div>
-
-            </form>
-        </div>
-    </div>
-</section>
-
+            </div>
+        </section>
         <section class="about bg-white">
     <div class="container d-flex flex-column justify-content-center">
         <h2 class="section__title about__title text-center">Home Cleaning Service</h2>
@@ -126,6 +125,82 @@
         </p>
     </div>
 </section>
+
+        <section class="marketing-text w-100">
+    <h2 class="marketing-text__text text-center ">Marketing text about service</h2>
+</section>
+
+        <section class="advantages">
+    <div class="container">
+        <h2 class="advantages__title section__title text-center">Why choose our cleaning services?</h2>
+        <ul class="advantages__list m-auto">
+            <li class="advantages__item">
+                <p class="advantages__text text-center">A reliable company. Our services are used and
+                    trusted by over 1000 of our clients on a regular basis</p>
+            </li>
+            <li class="advantages__item advantages__item--1">
+                <p class="advantages__text text-center">A high level of professionalism. All our cleaners
+                    have a great experience in cleaning services</p>
+            </li>
+            <li class="advantages__item advantages__item--2">
+                <p class="advantages__text text-center">A profitable price. We provide cleaning services at
+                    reasonable prices in London</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+        <section class="cleaning">
+            <div class="container">
+                <ul class="cleaning__box">
+                    <li class="cleaning__content align-items-center row">
+                        <img src="images/cleaning/clean-1.png" alt="photo cleaner"
+                            class="cleaning__img col-md-6 col-16 mb-4">
+                        <div
+                            class="cleaning__content-wrapper d-flex flex-column justify-content-center  col-md-10 col-16 align-content-center text-center text-md-end">
+                            <h2 class="section__title">Professional cleaning of your flat, house or office</h2>
+                            <p class="cleaning__descr mb-4 mb-md-0">Our goal is to provide a high quality cleaning
+                                services at an
+                                affordable price. We are very careful in selecting workers for our cleaning service
+                                in
+                                London. All of them have extensive experience of successful work.
+                                We use the best detergents that are not harmful. We also take into account all the
+                                special requirements for both one-time and regular cleaning services.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cleaning__content align-items-center row">
+                        <div
+                            class="cleaning__content-wrapper d-flex flex-column justify-content-center  col-md-10 col-16 align-content-center order-1 order-md-0 text-center text-md-start">
+                            <h2 class="section__title">Regular house cleaning</h2>
+                            <p class="cleaning__descr mb-4 mb-md-0">With a regular cleaning service, you choose a
+                                convenient
+                                frequency (every day, once a week or less) and time of visit. We work to an agreed
+                                cleaning list that is important to you. Moreover, if you want, you will be served by
+                                the
+                                same professional.
+                            </p>
+                        </div>
+                        <img src="images/cleaning/clean-2.png" alt="photo cleaner"
+                            class="cleaning__img col-md-6 col-16 mb-4">
+                    </li>
+                    <li class="cleaning__content align-items-center row">
+                        <img src="images/cleaning/clean-3.png" alt="photo cleaner"
+                            class="cleaning__img col-md-6 col-16 mb-4">
+                        <div
+                            class="cleaning__content-wrapper d-flex flex-column justify-content-center  col-md-10 col-16 align-content-center text-center text-md-end">
+                            <h2 class="section__title">One-time cleaning</h2>
+                            <p class="cleaning__descr">When there is no time for cleaning your house or flat, we
+                                will
+                                gladly help you get everything in order. All you have to do is tell us what you need
+                                to
+                                clean and we will get your house cleaned quickly and efficiently.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
         <section class="work-steps">
     <div class="container">
@@ -172,138 +247,6 @@
                 <p class="work-steps__text">Get a perfect cleaning service for your property</p>
             </li>
         </ul>
-    </div>
-</section>
-
-        <section class="marketing-text w-100">
-    <h2 class="marketing-text__text text-center ">Marketing text about service</h2>
-</section>
-
-        <section class="advantages">
-    <div class="container">
-        <h2 class="advantages__title section__title text-center">Why choose our cleaning services?</h2>
-        <ul class="advantages__list m-auto">
-            <li class="advantages__item">
-                <p class="advantages__text text-center">A reliable company. Our services are used and
-                    trusted by over 1000 of our clients on a regular basis</p>
-            </li>
-            <li class="advantages__item advantages__item--1">
-                <p class="advantages__text text-center">A high level of professionalism. All our cleaners
-                    have a great experience in cleaning services</p>
-            </li>
-            <li class="advantages__item advantages__item--2">
-                <p class="advantages__text text-center">A profitable price. We provide cleaning services at
-                    reasonable prices in London</p>
-            </li>
-        </ul>
-    </div>
-</section>
-
-        <section class="services">
-    <div class="container">
-        <h2 class="section__title text-center mb-5">Our most popular services are:</h2>
-        <ul class="services__list">
-            <li class="services__item bg-white">
-                <a href="#form-book" class="services__link d-flex flex-column h-100">
-                    <span class="services__text text-center">Regular Cleaning</span>
-                    <button class="services__btn border-1 bg-white">Book now</button>
-                </a>
-            </li>
-            <li class="services__item bg-white">
-                <a href="#form-book" class="services__link d-flex flex-column h-100">
-                    <span class="services__text text-center">Flat cleaning</span>
-                    <button class="services__btn border-1 bg-white">Book now</button>
-                </a>
-            </li>
-            <li class="services__item bg-white">
-                <a href="#form-book" class="services__link d-flex flex-column h-100">
-                    <span class="services__text text-center">House cleaning</span>
-                    <button class="services__btn border-1 bg-white">Book now</button>
-                </a>
-            </li>
-            <li class="services__item bg-white">
-                <a href="#form-book" class="services__link d-flex flex-column h-100">
-                    <span class="services__text text-center">Office cleaning</span>
-                    <button class="services__btn border-1 bg-white">Book now</button>
-                </a>
-            </li>
-            <li class="services__item bg-white">
-                <a href="#form-book" class="services__link d-flex flex-column h-100">
-                    <span class="services__text text-center">Cleaning after construction</span>
-                    <button class="services__btn border-1 bg-white">Book now</button>
-                </a>
-            </li>
-            <li class="services__item bg-white">
-                <a href="#form-book" class="services__link d-flex flex-column h-100">
-                    <span class="services__text text-center">Cleaning after rental</span>
-                    <button class="services__btn border-1 bg-white">Book now</button>
-                </a>
-            </li>
-        </ul>
-        <ul class="services__box">
-            <li class="services__content row">
-                <img src="images/services/srv-bg1.png" alt="photo cleaner"
-                    class="services__img col-md-6 col-16 mb-4">
-                <div
-                    class="services__content-wrapper d-flex flex-column justify-content-center  col-md-10 col-16 align-content-center text-center text-md-end">
-                    <h2 class="section__title">Professional cleaning of your flat, house or office</h2>
-                    <p class="services__descr mb-4 mb-md-0">Our goal is to provide a high quality cleaning
-                        services at an
-                        affordable price. We are very careful in selecting workers for our cleaning service
-                        in
-                        London. All of them have extensive experience of successful work.
-                        We use the best detergents that are not harmful. We also take into account all the
-                        special requirements for both one-time and regular cleaning services.
-                    </p>
-                </div>
-            </li>
-            <li class="services__content row">
-                <div
-                    class="services__content-wrapper d-flex flex-column justify-content-center  col-md-10 col-16 align-content-center order-1 order-md-0 text-center text-md-start">
-                    <h2 class="section__title">Regular house cleaning</h2>
-                    <p class="services__descr mb-4 mb-md-0">With a regular cleaning service, you choose a
-                        convenient
-                        frequency (every day, once a week or less) and time of visit. We work to an agreed
-                        cleaning list that is important to you. Moreover, if you want, you will be served by
-                        the
-                        same professional.
-                    </p>
-                </div>
-                <img src="images/services/srv-bg2.png" alt="photo cleaner"
-                    class="services__img col-md-6 col-16 mb-4">
-            </li>
-            <li class="services__content row">
-                <img src="images/services/srv-bg3.png" alt="photo cleaner"
-                    class="services__img col-md-6 col-16 mb-4">
-                <div
-                    class="services__content-wrapper d-flex flex-column justify-content-center  col-md-10 col-16 align-content-center text-center text-md-end">
-                    <h2 class="section__title">One-time cleaning</h2>
-                    <p class="services__descr">When there is no time for cleaning your house or flat, we
-                        will
-                        gladly help you get everything in order. All you have to do is tell us what you need
-                        to
-                        clean and we will get your house cleaned quickly and efficiently.
-                    </p>
-                </div>
-            </li>
-        </ul>
-    </div>
-</section>
-
-        <section class="faq bg-white text-center pt-5 pb-5">
-    <div class="container">
-        <h2 class="section__title mb-5">Frequently Asked Questions</h2>
-        <div class="faq__box row justify-content-center flex-column align-content-center gap-4">
-            <a href="#" class="faq__link m-auto">What is included in a cleaning service?</a>
-            <a href="#" class="faq__link m-auto">Does the cleaner use his or her own cleaning products and
-                equipment
-                or
-                do I have to provide them?</a>
-            <a href="#" class="faq__link m-auto">May I use the same cleaner for regular cleaning?</a>
-            <a href="#" class="faq__link m-auto">Do I have to pay if I do not need the cleaning service for
-                some
-                time?</a>
-        </div>
     </div>
 </section>
 
@@ -395,6 +338,67 @@
         <button type="button" class="reviews__btn m-auto">Book now</button>
     </div>
 </section>
+
+        <section class="faq bg-white text-center pt-5 pb-5">
+    <div class="container">
+        <h2 class="section__title mb-5">Frequently Asked Questions</h2>
+        <div class="faq__box row justify-content-center flex-column align-content-center gap-4">
+            <a href="#" class="faq__link m-auto">What is included in a cleaning service?</a>
+            <a href="#" class="faq__link m-auto">Does the cleaner use his or her own cleaning products and
+                equipment
+                or
+                do I have to provide them?</a>
+            <a href="#" class="faq__link m-auto">May I use the same cleaner for regular cleaning?</a>
+            <a href="#" class="faq__link m-auto">Do I have to pay if I do not need the cleaning service for
+                some
+                time?</a>
+        </div>
+    </div>
+</section>
+
+        <section class="services">
+            <div class="container">
+                <h2 class="section__title text-center mb-5">Our most popular services are:</h2>
+                <ul class="services__list">
+                    <li class="services__item bg-white">
+                        <a href="#form-book" class="services__link d-flex flex-column h-100">
+                            <span class="services__text text-center">Regular Cleaning</span>
+                            <button class="services__btn border-1 bg-white">Book now</button>
+                        </a>
+                    </li>
+                    <li class="services__item bg-white">
+                        <a href="#form-book" class="services__link d-flex flex-column h-100">
+                            <span class="services__text text-center">Flat cleaning</span>
+                            <button class="services__btn border-1 bg-white">Book now</button>
+                        </a>
+                    </li>
+                    <li class="services__item bg-white">
+                        <a href="#form-book" class="services__link d-flex flex-column h-100">
+                            <span class="services__text text-center">House cleaning</span>
+                            <button class="services__btn border-1 bg-white">Book now</button>
+                        </a>
+                    </li>
+                    <li class="services__item bg-white">
+                        <a href="#form-book" class="services__link d-flex flex-column h-100">
+                            <span class="services__text text-center">Office cleaning</span>
+                            <button class="services__btn border-1 bg-white">Book now</button>
+                        </a>
+                    </li>
+                    <li class="services__item bg-white">
+                        <a href="#form-book" class="services__link d-flex flex-column h-100">
+                            <span class="services__text text-center">Cleaning after construction</span>
+                            <button class="services__btn border-1 bg-white">Book now</button>
+                        </a>
+                    </li>
+                    <li class="services__item bg-white">
+                        <a href="#form-book" class="services__link d-flex flex-column h-100">
+                            <span class="services__text text-center">Cleaning after rental</span>
+                            <button class="services__btn border-1 bg-white">Book now</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
         <section class="cookies position-absolute">
     <button class="cookies__btn"></button>
