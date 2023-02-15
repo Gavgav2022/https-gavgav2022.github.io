@@ -12,7 +12,7 @@
                 </div>
                 <nav class="menu">
                     <ul class="menu__list">
-                        <li class="menu__item "> <a href="index.html" class="menu__link">Home</a> </li>
+                        <li class="menu__item"> <a href="index.html" class="menu__link">Home</a> </li>
                         <li class="menu__item menu__item--active"> <a href="services.html"
                                 class="menu__link">Services</a> </li>
                         <li class="menu__item">
@@ -30,7 +30,7 @@
                     </ul>
                 </nav>
                 <div class="contacts d-sm-block">
-                    <a href="tel:027 777 852 1" class="contacts__phone">027 777 852 1</a>
+                    <a href="tel:+440277778521" class="contacts__phone">027 777 852 1</a>
                     <div class="contacts__time d-block">
                         <span class="d-inline-block">Mondey to friday: <time class="contacts__time-descr">7:00 AM -
                                 22:00
@@ -52,12 +52,13 @@
     </header>
 
     <main class="main">
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="container">
                 <div class="hero__inner">
                     <div class="hero__content">
                         <h1 class="main-title">Service Page</h1>
-                        <p class="hero__text">We are a full-service cleaning company in London, which provides a wide
+                        <p class="hero__text">We are a full-service cleaning company in London, which provides a
+                            wide
                             range of high quality cleaning for a house, for a flat and for your office.</p>
                     </div>
                     <form class="form-book" id="form-book">
@@ -77,8 +78,9 @@
                             <label for="form-book__phone">Enter You Phone:</label>
                             <input class="form-book__phone" required id="form-book__phone" type="tel">
                             <label class="form-book__label" for="form-book__checkbox">
-                                <input class="foorm-book__checkbox d-inline-block" type="checkbox"
+                                <input class="form-book__checkbox d-inline-block" type="checkbox"
                                     name="form-book__checkbox" id="form-book__checkbox" required>
+                                <span class="form-book__checkmod"></span>
                                 I have read and agree with Smart Clean <a href="#"
                                     class="text-decoration-underline">Privacy Policy</a> and <a href="#"
                                     class="text-decoration-underline">Terms and Conditions.</a>
@@ -99,14 +101,14 @@
 
         <section class="cleaning">
             <div class="container">
+
                 <ul class="cleaning__box">
-                    <li class="cleaning__content align-items-center row justify-content-between">
-                        <img src="images/cleaning/clean-1.png" alt="photo cleaner"
-                            class="cleaning__img col-md-6 col-16 mb-4">
+                    <li class="cleaning__content align-items-center row">
+                        <img src="images/cleaning/clean-1.png" alt="photo cleaner" class="cleaning__img col-md-6 col-16 mb-4">
                         <div
-                            class="cleaning__content-wrapper d-flex flex-column justify-content-center  col-md-10 col-16 align-content-center text-center text-md-end">
+                            class="cleaning__content-wrapper ps-sm-5 d-flex flex-column justify-content-center  col-md-10 col-16 pe-sm-3 align-content-center text-center text-md-end">
                             <h2 class="section__title">Professional cleaning of your flat, house or office</h2>
-                            <p class="cleaning__descr mb-4 mb-md-0">Our goal is to provide a high quality cleaning
+                            <p class="cleaning__descr mb-md-0">Our goal is to provide a high quality cleaning
                                 services at an
                                 affordable price. We are very careful in selecting workers for our cleaning service
                                 in
@@ -116,11 +118,11 @@
                             </p>
                         </div>
                     </li>
-                    <li class="cleaning__content align-items-center row justify-content-between">
+                    <li class="cleaning__content align-items-center row">
                         <div
-                            class="cleaning__content-wrapper d-flex flex-column justify-content-center  col-md-10 col-16 align-content-center order-1 order-md-0 text-center text-md-start">
+                            class="cleaning__content-wrapper pe-sm-5 d-flex flex-column justify-content-center  col-md-10 col-16 ps-sm-3 align-content-center order-1 order-md-0 text-center text-md-start">
                             <h2 class="section__title">Regular house cleaning</h2>
-                            <p class="cleaning__descr mb-4 mb-md-0">With a regular cleaning service, you choose a
+                            <p class="cleaning__descr mb-md-0">With a regular cleaning service, you choose a
                                 convenient
                                 frequency (every day, once a week or less) and time of visit. We work to an agreed
                                 cleaning list that is important to you. Moreover, if you want, you will be served by
@@ -128,14 +130,12 @@
                                 same professional.
                             </p>
                         </div>
-                        <img src="images/cleaning/clean-2.png" alt="photo cleaner"
-                            class="cleaning__img col-md-6 col-16 mb-4">
+                        <img src="images/cleaning/clean-2.png" alt="photo cleaner" class="cleaning__img col-md-6 col-16 mb-4">
                     </li>
-                    <li class="cleaning__content align-items-center row justify-content-between">
-                        <img src="images/cleaning/clean-3.png" alt="photo cleaner"
-                            class="cleaning__img col-md-6 col-16 mb-4">
+                    <li class="cleaning__content align-items-center row">
+                        <img src="images/cleaning/clean-3.png" alt="photo cleaner" class="cleaning__img col-md-6 col-16 mb-4">
                         <div
-                            class="cleaning__content-wrapper d-flex flex-column justify-content-center  col-md-10 col-16 align-content-center text-center text-md-end">
+                            class="cleaning__content-wrapper ps-sm-5 d-flex flex-column justify-content-center  col-md-10 col-16 pe-sm-3 align-content-center text-center text-md-end">
                             <h2 class="section__title">One-time cleaning</h2>
                             <p class="cleaning__descr">When there is no time for cleaning your house or flat, we
                                 will
@@ -151,7 +151,7 @@
 
         @include('components/_work-steps.html')
 
-        <section class="reviews pt-5 mb-80">
+        <section class="reviews mb-80">
             <div class="container row">
                 <h2 class="section__title reviews__title text-center">Service Reviews</h2>
                 <ul class="reviews__list">
@@ -240,19 +240,94 @@
             </div>
         </section>
 
-        <section class="faq bg-white text-center pt-5 pb-5 mb-56">
+        <section class="faq bg-white text-center pt-5 pb-5 mb-5">
             <div class="container">
                 <h2 class="section__title mb-5">Frequently Asked Questions</h2>
-                <div class="faq__box row justify-content-center flex-column align-content-center gap-4">
-                    <a href="#" class="faq__link m-auto">What is included in a cleaning service?</a>
-                    <a href="#" class="faq__link m-auto">Does the cleaner use his or her own cleaning products and
-                        equipment
-                        or
-                        do I have to provide them?</a>
-                    <a href="#" class="faq__link m-auto">May I use the same cleaner for regular cleaning?</a>
-                    <a href="#" class="faq__link m-auto">Do I have to pay if I do not need the cleaning service for
-                        some
-                        time?</a>
+                <div class="faq__box row justify-content-center flex-column align-content-center">
+                    <details class="faq__item m-auto">
+                        <summary class="faq__question">What is included in a cleaning service?</summary>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem repudiandae porro, reiciendis eos
+                            distinctio laborum hic, neque perspiciatis atque aliquid necessitatibus. Aliquid repudiandae odit,
+                            quos, laborum adipisci nobis iure ullam nulla aperiam accusamus ex deleniti architecto quam? Ipsa
+                            nesciunt quod, eaque sequi quidem voluptatem enim eum exercitationem officia eius fugiat hic
+                            reiciendis modi magni libero unde sapiente doloremque expedita similique at debitis provident
+                            laudantium impedit. Ullam distinctio quos a nobis quod nulla, consectetur vero dolores reprehenderit
+                            reiciendis excepturi, quis, totam consequuntur? Voluptatum, veniam! Assumenda rerum delectus
+                            aspernatur, praesentium modi dicta voluptates saepe consequatur ipsa explicabo eum tenetur libero
+                            officia cumque provident excepturi, quae, cupiditate perferendis porro inventore accusantium. Hic
+                            asperiores iste excepturi delectus optio esse recusandae saepe magni aliquam perferendis, reiciendis
+                            consequuntur possimus odio, voluptatibus tenetur reprehenderit quia veritatis nemo dolor. Ab eos
+                            repellat minus porro quis magni, pariatur, accusantium eveniet et unde debitis odio tempora
+                            voluptatibus laborum enim ipsam, odit adipisci quisquam suscipit ad quibusdam facere. Libero vel
+                            atque eaque laborum, enim mollitia eos placeat repudiandae eius, blanditiis ex unde maiores
+                            doloribus quod odit. Pariatur et ea, autem repellat hic optio id veritatis architecto quas ex odio
+                            nihil impedit quam molestiae officia. Nobis aliquid ipsam repellendus maiores accusamus omnis?</p>
+                    </details>
+        
+                    <details class="faq__item m-auto">
+                        <summary class="faq__question">Does the cleaner use his or her own cleaning products and
+                            equipment
+                            or
+                            do I have to provide them?</summary>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem repudiandae porro, reiciendis eos
+                            distinctio laborum hic, neque perspiciatis atque aliquid necessitatibus. Aliquid repudiandae odit,
+                            quos, laborum adipisci nobis iure ullam nulla aperiam accusamus ex deleniti architecto quam? Ipsa
+                            nesciunt quod, eaque sequi quidem voluptatem enim eum exercitationem officia eius fugiat hic
+                            reiciendis modi magni libero unde sapiente doloremque expedita similique at debitis provident
+                            laudantium impedit. Ullam distinctio quos a nobis quod nulla, consectetur vero dolores reprehenderit
+                            reiciendis excepturi, quis, totam consequuntur? Voluptatum, veniam! Assumenda rerum delectus
+                            aspernatur, praesentium modi dicta voluptates saepe consequatur ipsa explicabo eum tenetur libero
+                            officia cumque provident excepturi, quae, cupiditate perferendis porro inventore accusantium. Hic
+                            asperiores iste excepturi delectus optio esse recusandae saepe magni aliquam perferendis, reiciendis
+                            consequuntur possimus odio, voluptatibus tenetur reprehenderit quia veritatis nemo dolor. Ab eos
+                            repellat minus porro quis magni, pariatur, accusantium eveniet et unde debitis odio tempora
+                            voluptatibus laborum enim ipsam, odit adipisci quisquam suscipit ad quibusdam facere. Libero vel
+                            atque eaque laborum, enim mollitia eos placeat repudiandae eius, blanditiis ex unde maiores
+                            doloribus quod odit. Pariatur et ea, autem repellat hic optio id veritatis architecto quas ex odio
+                            nihil impedit quam molestiae officia. Nobis aliquid ipsam repellendus maiores accusamus omnis?</p>
+                    </details>
+        
+                    <details class="faq__item m-auto">
+                        <summary class="faq__question">May I use the same cleaner for regular cleaning?</summary>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem repudiandae porro, reiciendis eos
+                            distinctio laborum hic, neque perspiciatis atque aliquid necessitatibus. Aliquid repudiandae odit,
+                            quos, laborum adipisci nobis iure ullam nulla aperiam accusamus ex deleniti architecto quam? Ipsa
+                            nesciunt quod, eaque sequi quidem voluptatem enim eum exercitationem officia eius fugiat hic
+                            reiciendis modi magni libero unde sapiente doloremque expedita similique at debitis provident
+                            laudantium impedit. Ullam distinctio quos a nobis quod nulla, consectetur vero dolores reprehenderit
+                            reiciendis excepturi, quis, totam consequuntur? Voluptatum, veniam! Assumenda rerum delectus
+                            aspernatur, praesentium modi dicta voluptates saepe consequatur ipsa explicabo eum tenetur libero
+                            officia cumque provident excepturi, quae, cupiditate perferendis porro inventore accusantium. Hic
+                            asperiores iste excepturi delectus optio esse recusandae saepe magni aliquam perferendis, reiciendis
+                            consequuntur possimus odio, voluptatibus tenetur reprehenderit quia veritatis nemo dolor. Ab eos
+                            repellat minus porro quis magni, pariatur, accusantium eveniet et unde debitis odio tempora
+                            voluptatibus laborum enim ipsam, odit adipisci quisquam suscipit ad quibusdam facere. Libero vel
+                            atque eaque laborum, enim mollitia eos placeat repudiandae eius, blanditiis ex unde maiores
+                            doloribus quod odit. Pariatur et ea, autem repellat hic optio id veritatis architecto quas ex odio
+                            nihil impedit quam molestiae officia. Nobis aliquid ipsam repellendus maiores accusamus omnis?</p>
+                    </details>
+        
+                    <details class="faq__item m-auto">
+                        <summary class="faq__question">Do I have to pay if I do not need the cleaning service for
+                            some
+                            time?</summary>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem repudiandae porro, reiciendis eos
+                            distinctio laborum hic, neque perspiciatis atque aliquid necessitatibus. Aliquid repudiandae odit,
+                            quos, laborum adipisci nobis iure ullam nulla aperiam accusamus ex deleniti architecto quam? Ipsa
+                            nesciunt quod, eaque sequi quidem voluptatem enim eum exercitationem officia eius fugiat hic
+                            reiciendis modi magni libero unde sapiente doloremque expedita similique at debitis provident
+                            laudantium impedit. Ullam distinctio quos a nobis quod nulla, consectetur vero dolores reprehenderit
+                            reiciendis excepturi, quis, totam consequuntur? Voluptatum, veniam! Assumenda rerum delectus
+                            aspernatur, praesentium modi dicta voluptates saepe consequatur ipsa explicabo eum tenetur libero
+                            officia cumque provident excepturi, quae, cupiditate perferendis porro inventore accusantium. Hic
+                            asperiores iste excepturi delectus optio esse recusandae saepe magni aliquam perferendis, reiciendis
+                            consequuntur possimus odio, voluptatibus tenetur reprehenderit quia veritatis nemo dolor. Ab eos
+                            repellat minus porro quis magni, pariatur, accusantium eveniet et unde debitis odio tempora
+                            voluptatibus laborum enim ipsam, odit adipisci quisquam suscipit ad quibusdam facere. Libero vel
+                            atque eaque laborum, enim mollitia eos placeat repudiandae eius, blanditiis ex unde maiores
+                            doloribus quod odit. Pariatur et ea, autem repellat hic optio id veritatis architecto quas ex odio
+                            nihil impedit quam molestiae officia. Nobis aliquid ipsam repellendus maiores accusamus omnis?</p>
+                    </details>
                 </div>
             </div>
         </section>
