@@ -58,8 +58,6 @@
 
         @include('components/_work-steps.html')
 
-        @include('components/_reviews.html')
-
         @include('components/_reviews.html', {
         "gap": "mb-80"
         })
@@ -68,9 +66,49 @@
         "gap": "mb-5"
         })
 
-        @include('components/_services.html', {
-        "gap": "marg-b180"
-        })
+        <section class="services marg-b180">
+            <div class="container">
+                <h2 class="section__title text-center mb-5">Our most popular services are:</h2>
+                <ul class="services__list">
+                    <li class="services__item bg-white">
+                        <a href="#form-book" class="services__link d-flex flex-column h-100">
+                            <span class="services__text text-center">Regular Cleaning</span>
+                        </a>
+                        <a class="services__btn border-1 bg-white" href="#form-book"> Book now</a>
+                    </li>
+                    <li class="services__item bg-white">
+                        <a href="#form-book" class="services__link d-flex flex-column h-100">
+                            <span class="services__text text-center">Flat cleaning</span>
+                        </a>
+                        <a class="services__btn border-1 bg-white" href="#form-book"> Book now</a>
+                    </li>
+                    <li class="services__item bg-white">
+                        <a href="#form-book" class="services__link d-flex flex-column h-100">
+                            <span class="services__text text-center">House cleaning</span>
+                        </a>
+                        <a class="services__btn border-1 bg-white" href="#form-book"> Book now</a>
+                    </li>
+                    <li class="services__item bg-white">
+                        <a href="#form-book" class="services__link d-flex flex-column h-100">
+                            <span class="services__text text-center">Office cleaning</span>
+                        </a>
+                        <a class="services__btn border-1 bg-white" href="#form-book"> Book now</a>
+                    </li>
+                    <li class="services__item bg-white">
+                        <a href="#form-book" class="services__link d-flex flex-column h-100">
+                            <span class="services__text text-center">Cleaning after construction</span>
+                        </a>
+                        <a class="services__btn border-1 bg-white" href="#form-book"> Book now</a>
+                    </li>
+                    <li class="services__item bg-white">
+                        <a href="#form-book" class="services__link d-flex flex-column h-100">
+                            <span class="services__text text-center">Cleaning after rental</span>
+                        </a>
+                        <a class="services__btn border-1 bg-white" href="#form-book"> Book now</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
         @include('components/_cookies.html')
 
