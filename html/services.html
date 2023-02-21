@@ -10,31 +10,31 @@
             <div class="container">
                 <div class="hero__inner  hero__inner--bg">
                     <div class="hero__content">
-                        <h1 class="main-title">Service Page</h1>
+                        <h1 class="main-title">Home Cleaning Service</h1>
                         <p class="hero__text">We are a full-service cleaning company in London, which provides a
                             wide
                             range of high quality cleaning for a house, for a flat and for your office.</p>
                     </div>
-                    <form class="form-book" id="form-book">
+                    <form class="form-book" id="form-book" action="mail.php">
                         <div class="form-book__content d-flex flex-column">
                             <h3 class="form-book__title text-center">Book service:</h3>
                             <label class="form-book__select-lab" for="form-book__select">Choose Your Service:</label>
                             <div class="form-book__select-wrapper">
-                                <select class="form-book__select" name="Service" required id="form-book__select">
-                                    <option class="form-book__option" value="1" disabled selected>Service</option>
+                                <select class="form-book__select select" name="Service" required id="form-book__select">
+                                    <option class="form-book__option form-book__option--1" value="1" disabled selected></option>
                                     <option class="form-book__option pb-3" value="1">Cleaning West London</option>
                                     <option class="form-book__option pb-5" value="2">Cleaning East London</option>
                                     <option class="form-book__option pb-3" value="3">Cleaning North London</option>
                                 </select>
                             </div>
                             <label for="form-book__adress">Service Address:</label>
-                            <input class="form-book__adress" required id="form-book__adress" type="text">
+                            <input class="form-book__adress" required id="form-book__adress" name="adress" type="text">
                             <label for="form-book__phone">Enter You Phone:</label>
-                            <input class="form-book__phone" required id="form-book__phone" type="tel">
+                            <input class="form-book__phone" required id="form-book__phone" name="phone" type="tel">
                             <label class="form-book__label" for="form-book__checkbox">
                                 <input class="form-book__checkbox d-inline-block" type="checkbox"
-                                    name="form-book__checkbox" id="form-book__checkbox" required>
-                                <span class="form-book__checkmod"></span>
+                                    name="privacy_policy" id="form-book__checkbox" required>
+                                    <span class="form-book__checkmod"></span>
                                 I have read and agree with Smart Clean <a href="#"
                                     class="text-decoration-underline">Privacy Policy</a> and <a href="#"
                                     class="text-decoration-underline">Terms and Conditions.</a>
@@ -42,7 +42,6 @@
                             <button class=" form-book__btn justify-content-between" id="book"
                                 type="submit">Book</button>
                         </div>
-
                     </form>
                 </div>
             </div>
