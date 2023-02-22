@@ -262,9 +262,41 @@
                             <span class="contact__reason-title">Reason for contact:</span>
                             <ul class="contact__list">
                                 <li class="contact__item">
-                                    <label class="contact__checkmodf" for="contact__checkmodf">
-                                        <input class="contact__reason-radio1" type="radio" name="reason"
-                                            id="contact__reason-radio1">
+                                    <label class="contact__checkmodf" for="contact__checkmodf1">
+                                        <input class="contact__reason-radio1" type="radio" value="1" name="reason"
+                                            id="contact__checkmodf1">
+                                        <span class="contact__check3"></span>
+                                        Request a service
+                                    </label>
+                                </li>
+                                <li class="contact__item">
+                                    <label class="contact__checkmodf" for="contact__checkmodf2">
+                                        <input class="contact__reason-radio1" type="radio" value="2" name="reason"
+                                            id="contact__checkmodf2">
+                                        <span class="contact__check3"></span>
+                                        Discuss an existing booking
+                                    </label>
+                                </li>
+                                <li class="contact__item">
+                                    <label class="contact__checkmodf" for="contact__checkmodf3">
+                                        <input class="contact__reason-radio1" type="radio" value="3" name="reason"
+                                            id="contact__checkmodf3">
+                                        <span class="contact__check3"></span>
+                                        Business partnership
+                                    </label>
+                                </li>
+                                <li class="contact__item">
+                                    <label class="contact__checkmodf" for="contact__checkmodf4">
+                                        <input class="contact__reason-radio1" type="radio" value="4" name="reason"
+                                            id="contact__checkmodf4">
+                                        <span class="contact__check3"></span>
+                                        Want to join the team
+                                    </label>
+                                </li>
+                                <li class="contact__item">
+                                    <label class="contact__checkmodf" for="contact__checkmodf5">
+                                        <input class="contact__reason-radio1" type="radio" value="5" name="reason"
+                                            id="contact__checkmodf5">
                                         <span class="contact__check3"></span>
                                         Request a service
                                     </label>
@@ -290,14 +322,20 @@
                         <span class="contact__reason-title">Please, tell us the nature of your enquiry:</span>
                         <ul class="contact__list-enquiry">
                             <li class="contact__item">
-                                <input class="contact__reason-radio1" type="radio" name="enquiry"
-                                    id="contact__enquiry1">
-                                <label for="contact__enquiry1">Residential</label>
+                                <label for="contact__enquiry1" class="contact__enquiry1">
+                                    <input class="contact__reason-radio2" type="radio" name="enquiry"
+                                        id="contact__enquiry1">
+                                    <span class="contact__check3"></span>
+                                    Residential
+                                </label>
                             </li>
                             <li class="contact__item">
-                                <input class="contact__reason-radio2" type="radio" name="enquiry"
-                                    id="contact__enquiry2">
-                                <label for="contact__enquiry2">Commercial</label>
+                                <label for="contact__enquiry2" class="contact__enquiry1">
+                                    <input class="contact__reason-radio2" type="radio" name="enquiry"
+                                        id="contact__enquiry2">
+                                    <span class="contact__check3"></span>
+                                    Commercial
+                                </label>
                             </li>
                         </ul>
                         <label class="contact__comments-label" for="contact__comments">Please, describe your request or
@@ -338,7 +376,9 @@
                             </li>
                         </ul>
 
-
+                        <button class="contact__btn" type="submit">
+                            Reqest a Callback
+                        </button>
                     </form>
                 </div>
             </div>
