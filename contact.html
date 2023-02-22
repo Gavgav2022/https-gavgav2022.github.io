@@ -259,11 +259,24 @@
                         <label for="contact__phone">Enter You Phone:</label>
                         <input class="contact__tele" required id="contact__phone" type="text">
                         <div class="contact__reason">
+                            <span class="contact__reason-title">Reason for contact:</span>
+                            <ul class="contact__list">
+                                <li class="contact__item">
+                                    <label class="contact__checkmodf" for="contact__checkmodf">
+                                        <input class="contact__reason-radio1" type="radio" name="reason"
+                                            id="contact__reason-radio1">
+                                        <span class="contact__check3"></span>
+                                        Request a service
+                                    </label>
+                                </li>
+                            </ul>
+
                             <label class="contact__select-label" for="contact__select">Select a Service:</label>
                             <div class="contact__select-wrapper">
                                 <select class="contact__select select" name="Service" required id="contact__select">
                                     <option class="contact__option contact__option--1" value="1" disabled selected>
-                                        New</option>
+                                        New
+                                    </option>
                                     <option class="contact__option pb-3" value="1">Cleaning West London</option>
                                     <option class="contact__option pb-5" value="2">Cleaning East London</option>
                                     <option class="contact__option pb-3" value="3">Cleaning North London</option>
@@ -274,6 +287,58 @@
                             <label for="contact__phone">Promo Code:</label>
                             <input class="contact__promo" required id="contact__phone" type="text">
                         </div>
+                        <span class="contact__reason-title">Please, tell us the nature of your enquiry:</span>
+                        <ul class="contact__list-enquiry">
+                            <li class="contact__item">
+                                <input class="contact__reason-radio1" type="radio" name="enquiry"
+                                    id="contact__enquiry1">
+                                <label for="contact__enquiry1">Residential</label>
+                            </li>
+                            <li class="contact__item">
+                                <input class="contact__reason-radio2" type="radio" name="enquiry"
+                                    id="contact__enquiry2">
+                                <label for="contact__enquiry2">Commercial</label>
+                            </li>
+                        </ul>
+                        <label class="contact__comments-label" for="contact__comments">Please, describe your request or
+                            add any comments below:</label>
+                        <input class="contact__comments" required id="contact__comments" type="textarea">
+
+                        <label class="contact__comments-label" for="contact__file">You can upload images and files up to
+                            10MB each and 1 video up to 10 seconds.
+                        </label>
+                        <input class="contact__comments" required id="contact__file" type="file">
+                        <ul class="contact__checkboxs-list">
+                            <li class="contact__checkbox-item">
+                                <label class="contact__label-1" for="contact__checkbox1">
+                                    <input class="contact__checkbox1 d-inline-block" type="checkbox"
+                                        name="privacy_policy" id="contact__checkbox1" required>
+                                    <span class="contact__checkmod1"></span>
+                                    I have read and agree with Smart Clean <a href="#"
+                                        class="text-decoration-underline">Privacy
+                                        Policy</a> and <a href="#" class="text-decoration-underline">Terms and
+                                        Conditions.</a>
+                                </label>
+                            </li>
+                            <li class="contact__checkbox-item">
+                                <label class="contact__label-2" for="contact__checkbox2">
+                                    <input class="contact__checkbox2 d-inline-block" type="checkbox"
+                                        name="privacy_policy" id="contact__checkbox2" required>
+                                    <span class="contact__checkmod2"></span>
+                                    Subscribe to receive offers and news via email
+                                </label>
+                            </li>
+                            <li class="contact__checkbox-item">
+                                <label class="contact__label-3" for="contact__checkbox3">
+                                    <input class="contact__checkbox3 d-inline-block" type="checkbox"
+                                        name="privacy_policy" id="contact__checkbox3" required>
+                                    <span class="contact__checkmod3"></span>
+                                    Subscribe to receive offers and news via SMS
+                                </label>
+                            </li>
+                        </ul>
+
+
                     </form>
                 </div>
             </div>
