@@ -1,0 +1,28 @@
+@include('components/_head.html')
+
+<div class="wrapper">
+
+    @include('components/_header.html', {
+    "color7": "menu__item--active"
+    })
+
+    <main class="main">
+
+<section class="e500">
+    <div class="container">
+        <div class="e500__inner">
+            <h1 class="e500__title">Error</h1>
+            <p class="e500__text">Ooops... Something went wrong</p>
+            <img class="e500__img" src="images/500.png" alt="error 500 icon" >
+            <p class="e500__content">VISIT THE <a class="e500__link" href="index.html" >HOMEPAGE</a>  OR <a class="e500__link" href="contact.html" >CONTACT US</a> ABOUT THE PROBLEM</p>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    @include('components/_footer.html')
+
+</div>
+
+@include('components/_footer-scripts.html')

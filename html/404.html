@@ -1,0 +1,29 @@
+@include('components/_head.html')
+
+<div class="wrapper">
+
+    @include('components/_header.html', {
+    "color7": "menu__item--active"
+    })
+
+    <main class="main">
+
+<section class="e404">
+    <div class="container">
+        <div class="e404__inner">
+            <h1 class="e404__title">PAGE NOT FOUND</h1>
+            <p class="e404__text">The link you clicked may be broken or
+                the page may have been removed</p>
+            <img class="e404__img" src="images/404.png" alt="error 404 icon" >
+            <p class="e404__content">VISIT THE <a class="e404__link" href="index.html" >HOMEPAGE</a>  OR <a class="e404__link" href="contact.html" >CONTACT US</a> ABOUT THE PROBLEM</p>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    @include('components/_footer.html')
+
+</div>
+
+@include('components/_footer-scripts.html')

@@ -2,7 +2,9 @@
 
 <div class="wrapper">
     
-    @include('components/_header.html')
+    @include('components/_header.html', {
+        "color1": "menu__item--active"
+        })
 
     <main class="main">
         @include('components/_hero.html')
