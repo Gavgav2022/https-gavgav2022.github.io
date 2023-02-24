@@ -189,9 +189,9 @@
             <div class="container">
                 <div class="contact__inner">
                     <div class="contact__content">
-                        <h2 class="section__title contact__title">
+                        <h1 class="section__title contact__title">
                             Contact us
-                        </h2>
+                        </h1>
                         <p class="contact__text">
                             Request a quote for any of our services, send questions about your current bookings, get
                             information about our franchise opportunities, offer us a business partnership or give
@@ -244,20 +244,21 @@
                                 </a>
                             </li>
                         </ul>
-
-                        <iframe class="contact__map"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.7281080726!2d-0.24168024584704462!3d51.528771840474214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2z0JvQvtC90LTQvtC9LCDQktC10LvQuNC60L7QsdGA0LjRgtCw0L3QuNGP!5e0!3m2!1sru!2sua!4v1676841495161!5m2!1sru!2sua"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+                        <div class="contact__map-inner">
+                            <iframe class="contact__map"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.7281080726!2d-0.24168024584704462!3d51.528771840474214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2z0JvQvtC90LTQvtC9LCDQktC10LvQuNC60L7QsdGA0LjRgtCw0L3QuNGP!5e0!3m2!1sru!2sua!4v1676841495161!5m2!1sru!2sua"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
                     </div>
-                    <form action="" class="contact__form">
+                    <form action="mail.php" class="contact__form" id="form-book" action="mail.php">
                         <label class="contact__labels" for="contact__name">What's your name:</label>
-                        <input class="contact__name" required id="contact__name" type="text">
+                        <input class="contact__name" required id="contact__name" name="name" type="text">
                         <label class="contact__labels" for="contact__email">Enter You Email:</label>
-                        <input class="contact__email" required id="contact__email" type="tel">
-                        <label class="contact__labels" for="contact__phone">Enter You Phone:</label>
-                        <input class="contact__tele" required id="contact__phone" type="text">
+                        <input class="contact__email" required id="contact__email" name="email" type="email">
+                        <label class="contact__labels" for="form-book__phone">Enter You Phone:</label>
+                        <input class="contact__tele" required id="form-book__phone" minlength="15" name="phone" type="tel">
                         <div class="contact__reason">
                             <span class="contact__reason-title">Reason for contact:</span>
                             <ul class="contact__list">
@@ -303,11 +304,11 @@
                                 </li>
                             </ul>
 
-                            <label class="contact__select-label contact__labels" for="contact__select">Select a Service:</label>
+                            <label class="contact__select-label contact__labels" for="contact__select">Select a
+                                Service:</label>
                             <div class="contact__select-wrapper">
                                 <select class="contact__select select" name="Service" required id="contact__select">
                                     <option class="contact__option contact__option--1" value="1" disabled selected>
-                                        New
                                     </option>
                                     <option class="contact__option pb-3" value="1">Cleaning West London</option>
                                     <option class="contact__option pb-5" value="2">Cleaning East London</option>
@@ -315,9 +316,9 @@
                                 </select>
                             </div>
                             <label class="contact__labels" for="contact__postcode">Postcode:</label>
-                            <input class="contact__email" required id="contact__email" type="tel">
+                            <input class="contact__email" required id="contact__email" type="tel" name="">
                             <label class="contact__labels" for="contact__phone">Promo Code:</label>
-                            <input class="contact__promo" required id="contact__phone" type="text">
+                            <input class="contact__promo" required id="contact__phone" type="text" name="">
                         </div>
                         <span class="contact__reason-title">Please, tell us the nature of your enquiry:</span>
                         <ul class="contact__list-enquiry">
@@ -340,7 +341,7 @@
                         </ul>
                         <label class="contact__comments-label" for="contact__comments">Please, describe your request or
                             add any comments below:</label>
-                        <input class="contact__comments" required id="contact__comments" type="textarea">
+                        <input class="contact__comments" required id="contact__comments" type="textarea" name="">
 
                         <span class="contact__comments-label contact__file-title">You can upload images and files up to
                             10MB each and 1 video up to 10 seconds.
@@ -350,7 +351,7 @@
                             <span class="contact__file-text">Drag files to upload or</span>
                             <label class="contact__file-label" for="contact__file">Choose files
                             </label>
-                            <input class="contact__file" required id="contact__file" type="file">
+                            <input class="contact__file" id="contact__file" type="file">
                         </div>
                         <ul class="contact__checkboxs-list">
                             <li class="contact__checkbox-item">
@@ -367,7 +368,7 @@
                             <li class="contact__checkbox-item">
                                 <label class="contact__label-2" for="contact__checkbox2">
                                     <input class="contact__checkbox2 d-inline-block" type="checkbox"
-                                        name="privacy_policy" id="contact__checkbox2" required>
+                                        name="Subscribe email" id="contact__checkbox2">
                                     <span class="contact__checkmod2"></span>
                                     Subscribe to receive offers and news via email
                                 </label>
@@ -375,7 +376,7 @@
                             <li class="contact__checkbox-item">
                                 <label class="contact__label-3" for="contact__checkbox3">
                                     <input class="contact__checkbox3 d-inline-block" type="checkbox"
-                                        name="privacy_policy" id="contact__checkbox3" required>
+                                        name="Subscribe SMS" id="contact__checkbox3">
                                     <span class="contact__checkmod3"></span>
                                     Subscribe to receive offers and news via SMS
                                 </label>
