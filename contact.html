@@ -258,7 +258,8 @@
                         <label class="contact__labels" for="contact__email">Enter You Email:</label>
                         <input class="contact__email" required id="contact__email" name="email" type="email">
                         <label class="contact__labels" for="form-book__phone">Enter You Phone:</label>
-                        <input class="contact__tele" required id="form-book__phone" minlength="17" name="phone" type="tel">
+                        <input class="contact__tele" required id="form-book__phone" minlength="17" name="phone"
+                            type="tel">
                         <div class="contact__reason">
                             <span class="contact__reason-title">Reason for contact:</span>
                             <ul class="contact__list">
@@ -307,12 +308,18 @@
                             <label class="contact__select-label contact__labels" for="contact__select">Select a
                                 Service:</label>
                             <div class="contact__select-wrapper">
-                                <select class="contact__select select field" name="service" required id="contact__select">
+                                <select class="contact__select select field" name="service" required
+                                    id="contact__select">
                                     <option class="contact__option contact__option--1" value="" selected>
                                     </option>
-                                    <option class="contact__option pb-3" value="1">Cleaning West London</option>
-                                    <option class="contact__option pb-5" value="2">Cleaning East London</option>
-                                    <option class="contact__option pb-3" value="3">Cleaning North London</option>
+                                    <option class="contact__option pb-3" value="1">After builder cleaning</option>
+                                    <option class="contact__option pb-5" value="2">Monthly cleaning</option>
+                                    <option class="contact__option pb-3" value="3">Moving in out cleaning</option>
+                                    <option class="contact__option pb-5" value="4">Flat cleaning</option>
+                                    <option class="contact__option pb-3" value="5">New house cleaning</option>
+                                    <option class="contact__option pb-5" value="6">Domestic cleaning</option>
+                                    <option class="contact__option pb-3" value="7">Regular cleaning</option>
+                                    <option class="contact__option pb-3" value="8">Perfect weekly cleaning</option>
                                 </select>
                             </div>
                             <label class="contact__labels" for="contact__postcode">Postcode:</label>
@@ -341,7 +348,8 @@
                         </ul>
                         <label class="contact__comments-label" for="contact__comments">Please, describe your request or
                             add any comments below:</label>
-                        <input class="contact__comments" required id="contact__comments" type="textarea" name="">
+                        <textarea class="contact__comments" name="" id="contact__comments" cols="30"
+                            rows="10"></textarea>
 
                         <span class="contact__comments-label contact__file-title">You can upload images and files up to
                             10MB each and 1 video up to 10 seconds.
